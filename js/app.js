@@ -112,7 +112,7 @@ function handleKey(event) {
 }
 
 // Returns the class name for a specific cell
-function getClassName(location) {
-	const cellClass = 'cell-' + location.i + '-' + location.j
+function getClassName(position) {
+	const cellClass = `cell-${position.i}-${position.j}`
 	return cellClass
 }
