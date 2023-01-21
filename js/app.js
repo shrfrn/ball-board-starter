@@ -43,7 +43,8 @@ function renderBoard(board) {
 			if (currCell.type === FLOOR) cellClass += ' floor'
 			else if (currCell.type === WALL) cellClass += ' wall'
 
-			strHTML += '\t<td class="cell ' + cellClass + '"  onclick="moveTo(' + i + ',' + j + ')" >\n'
+			// strHTML += '\t<td class="cell ' + cellClass + '"  onclick="moveTo(' + i + ',' + j + ')" >\n'
+			strHTML += `\t<td class="cell ${cellClass}" onclick="moveTo(${i},${j})">\n`
 
 			if (currCell.gameElement === GAMER) {
 				strHTML += GAMER_IMG
