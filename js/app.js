@@ -44,7 +44,7 @@ function renderBoard(board) {
 			else if (currCell.type === WALL) cellClass += ' wall'
 
 			// strHTML += '\t<td class="cell ' + cellClass + '"  onclick="moveTo(' + i + ',' + j + ')" >\n'
-			strHTML += `\t<td class="cell ${cellClass}" onclick="moveTo(${i},${j})">\n`
+			strHTML += `\t<td class="cell ${cellClass}" onclick="moveTo(${i},${j})">`
 
 			if (currCell.gameElement === GAMER) {
 				strHTML += GAMER_IMG
@@ -52,7 +52,7 @@ function renderBoard(board) {
 				strHTML += BALL_IMG
 			}
 
-			strHTML += '\t</td>\n'
+			strHTML += '</td>\n'
 		}
 		strHTML += '</tr>\n'
 	}
