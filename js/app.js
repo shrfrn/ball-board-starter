@@ -15,7 +15,7 @@ var gGamerPos
 function initGame() {
 	gGamerPos = { i: 2, j: 9 }
 	gBoard = buildBoard()
-	renderBoard(gBoard)
+	// renderBoard(gBoard)
 
 }
 
