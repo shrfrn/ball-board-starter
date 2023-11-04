@@ -64,8 +64,10 @@ function renderBoard(board) {
 // Move the player to a specific location
 function moveTo(i, j) {
 
-	const targetCell = gBoard[i][j]
-	if (targetCell.type === WALL) return
+	const fromCell = gBoard[gGamerPos.i][gGamerPos.j]
+	const toCell = gBoard[i][j]
+
+	if (toCell.type === WALL) return
 
 	// Calculate distance to make sure we are moving to a neighbor cell
 	const iAbsDiff = Math.abs(i - gGamerPos.i)
@@ -74,7 +76,7 @@ function moveTo(i, j) {
 	// If the clicked Cell is one of the four allowed
 	if ((iAbsDiff === 1 && jAbsDiff === 0) || (jAbsDiff === 1 && iAbsDiff === 0)) {
 
-		if (targetCell.gameElement === BALL) {
+		if (toCell.gameElement === BALL) {
 			console.log('Collecting!')
 		}
 
