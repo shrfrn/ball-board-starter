@@ -58,7 +58,7 @@ function renderBoard(board) {
 	}
 	console.log('strHTML is:')
 	console.log(strHTML)
-	elBoard.innerHTML = strHTML
+	// elBoard.innerHTML = strHTML
 }
 
 // Move the player to a specific location
