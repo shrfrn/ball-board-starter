@@ -1,6 +1,12 @@
 body {
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-align: center;
+}
+
+table {
+    margin: 100px auto;
 }
 
 .cell {
@@ -15,9 +21,9 @@ body {
 }
 
 .floor {
-    background-color: gray;
+    background-color: rgb(183, 183, 183);
 }
 
 .wall {
-    background-color: brown;
+    background-color: rgb(131, 156, 177);
 }
