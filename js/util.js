@@ -1,10 +1,10 @@
 'use strict'
 
-function createMat(ROWS, COLS) {
+function createMat(rows, cols) {
     const mat = []
-    for (var i = 0; i < ROWS; i++) {
+    for (var i = 0; i < rows; i++) {
         const row = []
-        for (var j = 0; j < COLS; j++) {
+        for (var j = 0; j < cols; j++) {
             row.push('')
         }
         mat.push(row)

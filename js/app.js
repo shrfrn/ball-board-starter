@@ -16,14 +16,15 @@ function initGame() {
 	gGamerPos = { i: 2, j: 9 }
 	gBoard = buildBoard()
 	// renderBoard(gBoard)
-
 }
 
 function buildBoard() {
 	const board = []
+
 	// TODO: Create the Matrix 10 * 12 
 	// TODO: Put FLOOR everywhere and WALL at edges
 	// TODO: Place the gamer and two balls
+
 	console.log(board)
 	return board
 }
@@ -33,6 +34,7 @@ function renderBoard(board) {
 
 	const elBoard = document.querySelector('.board')
 	var strHTML = ''
+    
 	for (var i = 0; i < board.length; i++) {
 		strHTML += '<tr>\n'
 		for (var j = 0; j < board[0].length; j++) {
